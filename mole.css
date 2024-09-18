@@ -1,8 +1,34 @@
-/* Your code here */
+.wgs {
+  display: inline-block;
+  /*flex-wrap: wrap;*/
+  width: 640px;
+  height: 482px;
+  overflow: hidden;
+}
+
+#wgs__mole-head {
+  position: absolute;
+  height: 376px;
+  width: 378px;
+  margin-left: 108px;
+}
+
+#wgs__dirt-pile {
+  position: absolute;
+  width: 640px;
+  height: 220px;
+  top: 286px;
+  margin-right: 200px;
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 482px;
+  
+}
 
 
 
-/* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
+/* UNCOMMENT THE CODE BELOW WHEN DIRECTED */ 
 /* .sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
