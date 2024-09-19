@@ -1,5 +1,6 @@
 
 .wgs {
+  position: relative;
   display: inline-block;
   flex-wrap: wrap;
   width: 640px;
@@ -29,8 +30,6 @@
   margin-top: 510px;
   
 }
-
-
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */ 
 /* .sb {
