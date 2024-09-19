@@ -1,29 +1,33 @@
+
 .wgs {
   display: inline-block;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   width: 640px;
-  height: 482px;
+  height: 498px;
   overflow: hidden;
+  position: relative;
 }
 
 #wgs__mole-head {
-  position: absolute;
   height: 376px;
   width: 378px;
   margin-left: 108px;
+  position: absolute;
+  transition: 0.25s;
 }
 
 #wgs__dirt-pile {
-  position: absolute;
   width: 640px;
   height: 220px;
-  top: 286px;
-  margin-right: 200px;
+  margin-top: 277px;
+  margin-right: 50px;
   bottom: 0px;
+  
 }
 
 .wgs__mole-head--hidden {
   margin-top: 510px;
+  
 }
 
 

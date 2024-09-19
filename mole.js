@@ -59,3 +59,23 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  function animateMoles() {
+    const moleHeads = document.querySelectorAll('.wgs__mole-head');
+    moleHeads.forEach(moleHead => {
+      // Randomly decide whether to show or hide the mole
+      if (Math.random() > 0.5) {
+        moleHead.style.transform = 'translateY(0)';
+      } else {
+        moleHead.style.transform = 'translateY(100%)';
+      }
+    });
+    
+    // Schedule the next animation
+    setTimeout(animateMoles, 1000);
+  }
+
+  // Start the animation
+  animateMoles();
+});
