@@ -1,6 +1,6 @@
 .wgs {
+  position: relative;
   display: inline-block;
-  /*flex-wrap: wrap;*/
   width: 640px;
   height: 482px;
   overflow: hidden;
@@ -10,23 +10,22 @@
   position: absolute;
   height: 376px;
   width: 378px;
-  margin-left: 108px;
+  left: 108px;
+  top: 0;
+  transition: top 0.25s;
 }
 
 #wgs__dirt-pile {
   position: absolute;
   width: 640px;
   height: 220px;
-  top: 286px;
-  margin-right: 200px;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
 }
 
 .wgs__mole-head--hidden {
-  margin-top: 510px;
+  top: 482px;
 }
-
-
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */ 
 /* .sb {
