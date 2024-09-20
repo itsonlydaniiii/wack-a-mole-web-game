@@ -8,33 +8,35 @@
   position: relative;
   display: inline-block;
   flex-wrap: wrap;
-  width: 320px;
-  height: 244px;
+  width: 420px;
+  height: 262px;
   overflow: hidden;
 }
 
-#wgs__mole-head {
-  height: 188px;
-  width: 189px;
-  margin-left: 54px;
+.wgs__mole-head {
+  height: 178px; 
+  width: 191px; 
   position: absolute;
-  transition-duration: margin-top 0.25s ease;
-  transition-delay: 0s;
-  bottom: 10px;
+  transition: bottom 0.25s ease; 
+  bottom: 101px; 
+  left: 53px; 
 }
 
-#wgs__dirt-pile {
+.wgs__dirt-pile {
   width: 320px;
   height: 110px;
   position: absolute;
-  bottom: 0;
-  top: 185px;
-  margin-right: 200px;
+  bottom: -6px;
+  z-index: 1;
 }
 
 .wgs__mole-head--hidden {
-  margin-top: 255px;
-} 
+  bottom: -178px; 
+}
+
+.wgs__mole-head--visible {
+  bottom: 52px; 
+}
 
 .sb {
   background-color: cornflowerblue;
@@ -58,4 +60,8 @@
 
 .sb__game-over--hidden {
   display: none;
-} 
+}
+
+.wgs__mole-head--visible {
+  margin-top: 0;
+}
