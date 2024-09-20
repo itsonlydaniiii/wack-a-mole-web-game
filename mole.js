@@ -21,7 +21,7 @@ function popUpRandomMole() {
   clickable = true;
 
   // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
-  // moleHead.classList.remove('wgs__mole-head--hidden', 'wgs__mole-head--whacked');
+  moleHead.classList.remove('wgs__mole-head--hidden', 'wgs__mole-head--whacked');
 
   molesLeft -= 1;
   document.querySelector('.sb__moles').innerHTML = molesLeft;
@@ -52,34 +52,22 @@ window.addEventListener('DOMContentLoaded', () => {
       hideMole(event.target);
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
-      // event.target.classList.add('wgs__mole-head--hidden');
+      event.target.classList.add('wgs__mole-head--hidden');
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
-      // event.target.classList.add('wgs__mole-head--whacked');
+      event.target.classList.add('wgs__mole-head--whacked');
     });
   }
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  const moleHead = document.getElementById('wgs__mole-head');
-  let count = 0;
-  
-  function animateMole() {
-    if (count >= 1000) return; // Stop after 1000 animations
+/*window.addEventListener('DOMContentLoaded', () => {
 
-    if (Math.random() > 0.5) {
-      // Move mole up
-      moleHead.style.bottom = '0px';
-    } else {
-      // Move mole down (hide it)
-      moleHead.style.bottom = '-376px';
+  setInterval(() => {
+    const moleHeads = document.querySelectorAll('.wgs__mole-head');
+    for (let moleHead of moleHeads) {
+      moleHead.classList.toggle('wgs__mole-head--hidden');
     }
-    
-    count++;
-    // Schedule the next animation
-    setTimeout(animateMole, 1000);
-  }
+  }, 1000);
 
-  // Start the animation
-  animateMole();
-});
+}); */
+
